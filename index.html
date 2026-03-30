@@ -333,6 +333,17 @@
     .logo-img {
       filter: drop-shadow(0 0 8px rgba(0,212,255,0.4));
     }
+
+    /* ── BANDERA COLOMBIA SVG (fallback) ── */
+    .co-flag {
+      display: inline-block;
+      width: 1.2em;
+      height: 0.9em;
+      vertical-align: middle;
+      margin: 0 0.1em;
+      background: linear-gradient(180deg, #FCD116 0%, #FCD116 33%, #003893 33%, #003893 66%, #CE1126 66%, #CE1126 100%);
+      border-radius: 2px;
+    }
   </style>
 </head>
 <body class="relative">
@@ -393,7 +404,7 @@
         <!-- Pill badge -->
         <div class="fade-up inline-flex items-center gap-2 badge rounded-full px-4 py-1.5 mb-8">
           <div class="hero-dot"></div>
-          <span class="font-body">Medellín 🇨🇴 · Sin mensualidades · Sin letra pequeña</span>
+          <span class="font-body">Medellín <span class="co-flag"></span> · Sin mensualidades · Sin letra pequeña</span>
         </div>
 
         <!-- Headline -->
@@ -421,7 +432,7 @@
              class="glow-btn w-full sm:w-auto px-8 py-4 rounded-full text-white font-display font-700 text-lg">
             Ver Catálogo →
           </a>
-          <a href="mailto:barapagoficial@gmail.com" class="outline-btn w-full sm:w-auto px-8 py-4 rounded-full font-display font-600 text-base">
+          <a href="mailto:barapagoficial@gmail.com" class="outline-btn w-full sm:w-auto px-8 py-4 rounded-full font-display font-600 text-base email-link" data-email="barapagoficial@gmail.com">
             barapagoficial@gmail.com
           </a>
         </div>
@@ -506,7 +517,7 @@
             </li>
           </ul>
 
-          <a href="mailto:barapagoficial@gmail.com?subject=Quiero%20una%20Web%20de%20Negocios" class="mt-8 block glow-btn text-center py-3.5 rounded-2xl text-white font-display font-700 text-sm">
+          <a href="mailto:barapagoficial@gmail.com?subject=Quiero%20una%20Web%20de%20Negocios" class="mt-8 block glow-btn text-center py-3.5 rounded-2xl text-white font-display font-700 text-sm email-link" data-email="barapagoficial@gmail.com?subject=Quiero%20una%20Web%20de%20Negocios">
             Quiero esta web →
           </a>
         </div>
@@ -553,7 +564,7 @@
             </li>
           </ul>
 
-          <a href="mailto:barapagoficial@gmail.com?subject=Quiero%20una%20Invitaci%C3%B3n%20Digital" class="mt-8 block outline-btn text-center py-3.5 rounded-2xl font-display font-700 text-sm">
+          <a href="mailto:barapagoficial@gmail.com?subject=Quiero%20una%20Invitaci%C3%B3n%20Digital" class="mt-8 block outline-btn text-center py-3.5 rounded-2xl font-display font-700 text-sm email-link" data-email="barapagoficial@gmail.com?subject=Quiero%20una%20Invitaci%C3%B3n%20Digital">
             Quiero mi invitación →
           </a>
         </div>
@@ -614,7 +625,7 @@
 
       <p class="text-center text-slate-500 text-sm font-body mt-8 fade-up">
         ¿Quieres ver una demo en vivo? 
-        <a href="mailto:barapagoficial@gmail.com?subject=Demo%20en%20vivo%20BaraPag" class="text-cyan hover:underline transition-colors">
+        <a href="mailto:barapagoficial@gmail.com?subject=Demo%20en%20vivo%20BaraPag" class="text-cyan hover:underline transition-colors email-link" data-email="barapagoficial@gmail.com?subject=Demo%20en%20vivo%20BaraPag">
           Escríbenos y te la mostramos →
         </a>
       </p>
@@ -627,7 +638,7 @@
   <section class="relative z-10 trust-section py-20 px-5">
     <div class="max-w-4xl mx-auto text-center">
       <div class="fade-up">
-        <div class="text-5xl mb-6">🇨🇴</div>
+        <div class="text-5xl mb-6"><span class="co-flag" style="width: 2rem; height: 1.5rem;"></span></div>
         <h2 class="font-display font-800 text-2xl sm:text-3xl lg:text-4xl text-white mb-4 leading-tight">
           Emprendimiento familiar de <span class="grad-text">Medellín</span>
         </h2>
@@ -670,7 +681,7 @@
 
       <div class="glass-card rounded-3xl p-8 text-left space-y-5">
 
-        <a href="mailto:barapagoficial@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl glass-card border hover:bg-white/[0.07] transition-colors group">
+        <a href="mailto:barapagoficial@gmail.com" class="flex items-center gap-4 p-4 rounded-2xl glass-card border hover:bg-white/[0.07] transition-colors group email-link" data-email="barapagoficial@gmail.com">
           <div class="w-11 h-11 rounded-xl glass-card-accent flex items-center justify-center flex-shrink-0 text-lg">📧</div>
           <div class="flex-1">
             <div class="font-display font-700 text-white text-sm">Correo electrónico</div>
@@ -685,24 +696,17 @@
 
 
   <!-- ===== PORTFOLIO SCENES ===== -->
-
   <!-- SCENE: BARBERÍA -->
   <div id="scene-barberia" class="portfolio-scene">
     <div class="mesh-bg" style="background: radial-gradient(ellipse 60% 50% at 20% 20%, rgba(180,120,30,0.18) 0%, transparent 70%), radial-gradient(ellipse 50% 60% at 80% 80%, rgba(212,168,83,0.1) 0%, transparent 70%), #0a0e1a;"></div>
     <button class="scene-back-btn" onclick="closeScene()">← Volver al portafolio</button>
-
-    <!-- Hero -->
     <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:5rem 1.25rem 3rem;position:relative;z-index:10;">
       <div style="max-width:900px;width:100%;margin:auto;">
-        <!-- Nav mockup -->
         <div class="scene-glass" style="display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.5rem;margin-bottom:3rem;">
           <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:#fff;">The<span style="background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Cuts</span></span>
-          <div style="display:flex;gap:1.5rem;font-size:.8rem;color:rgba(255,255,255,.5);font-family:'DM Sans',sans-serif;">
-            <span>Servicios</span><span>Galería</span><span>Ubicación</span>
-          </div>
+          <div style="display:flex;gap:1.5rem;font-size:.8rem;color:rgba(255,255,255,.5);font-family:'DM Sans',sans-serif;"><span>Servicios</span><span>Galería</span><span>Ubicación</span></div>
           <button class="demo-btn" style="background:linear-gradient(135deg,#c9923a,#f5d176);color:#0a0e1a;padding:.45rem 1.1rem;border-radius:999px;font-family:'Syne',sans-serif;font-weight:700;font-size:.78rem;border:none;">Reservar ✂️</button>
         </div>
-        <!-- Hero text -->
         <div style="text-align:center;margin-bottom:3rem;">
           <div style="display:inline-flex;align-items:center;gap:.5rem;background:rgba(212,168,83,.12);border:1px solid rgba(212,168,83,.3);border-radius:999px;padding:.4rem 1rem;font-family:'DM Sans',sans-serif;font-size:.72rem;color:#d4a853;letter-spacing:.08em;margin-bottom:1.5rem;">✂️ &nbsp;Medellín · Laureles</div>
           <h1 style="font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.4rem,6vw,4.5rem);line-height:1.08;color:#fff;margin-bottom:1rem;">El corte perfecto,<br/><span style="background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">a tu medida</span></h1>
@@ -712,58 +716,23 @@
             <button class="demo-btn" style="border:1px solid rgba(212,168,83,.4);color:#d4a853;background:transparent;padding:.85rem 2rem;border-radius:999px;font-family:'Syne',sans-serif;font-weight:600;font-size:.9rem;">Ver galería</button>
           </div>
         </div>
-        <!-- Stats row -->
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-bottom:2.5rem;">
-          <div class="scene-glass" style="text-align:center;padding:1.2rem .5rem;">
-            <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">+500</div>
-            <div style="font-family:'DM Sans',sans-serif;font-size:.73rem;color:rgba(255,255,255,.4);margin-top:.3rem;">Clientes felices</div>
-          </div>
-          <div class="scene-glass" style="text-align:center;padding:1.2rem .5rem;border-color:rgba(212,168,83,.2);">
-            <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">8</div>
-            <div style="font-family:'DM Sans',sans-serif;font-size:.73rem;color:rgba(255,255,255,.4);margin-top:.3rem;">Años de experiencia</div>
-          </div>
-          <div class="scene-glass" style="text-align:center;padding:1.2rem .5rem;">
-            <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">4.9★</div>
-            <div style="font-family:'DM Sans',sans-serif;font-size:.73rem;color:rgba(255,255,255,.4);margin-top:.3rem;">Calificación</div>
-          </div>
+          <div class="scene-glass" style="text-align:center;padding:1.2rem .5rem;"><div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">+500</div><div style="font-family:'DM Sans',sans-serif;font-size:.73rem;color:rgba(255,255,255,.4);margin-top:.3rem;">Clientes felices</div></div>
+          <div class="scene-glass" style="text-align:center;padding:1.2rem .5rem;border-color:rgba(212,168,83,.2);"><div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">8</div><div style="font-family:'DM Sans',sans-serif;font-size:.73rem;color:rgba(255,255,255,.4);margin-top:.3rem;">Años de experiencia</div></div>
+          <div class="scene-glass" style="text-align:center;padding:1.2rem .5rem;"><div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.8rem;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">4.9★</div><div style="font-family:'DM Sans',sans-serif;font-size:.73rem;color:rgba(255,255,255,.4);margin-top:.3rem;">Calificación</div></div>
         </div>
-        <!-- Services -->
         <h2 style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;color:#fff;text-align:center;margin-bottom:1.2rem;">Servicios <span style="background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">&amp; Precios</span></h2>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1rem;margin-bottom:2.5rem;">
-          <div class="scene-glass" style="padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;">
-            <div style="font-size:1.6rem;">💈</div>
-            <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;">Corte Clásico</div>
-            <div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:rgba(255,255,255,.45);">Corte + lavado + peinado</div>
-            <div style="font-family:'Syne',sans-serif;font-weight:800;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">$25.000</div>
-          </div>
-          <div class="scene-glass" style="padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;border-color:rgba(212,168,83,.3);">
-            <div style="font-size:1.6rem;">🪒</div>
-            <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;">Barba Completa</div>
-            <div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:rgba(255,255,255,.45);">Perfilado + hot towel</div>
-            <div style="font-family:'Syne',sans-serif;font-weight:800;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">$30.000</div>
-          </div>
-          <div class="scene-glass" style="padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;">
-            <div style="font-size:1.6rem;">✨</div>
-            <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;">Full Combo</div>
-            <div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:rgba(255,255,255,.45);">Corte + barba + tratamiento</div>
-            <div style="font-family:'Syne',sans-serif;font-weight:800;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">$50.000</div>
-          </div>
+          <div class="scene-glass" style="padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;"><div style="font-size:1.6rem;">💈</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;">Corte Clásico</div><div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:rgba(255,255,255,.45);">Corte + lavado + peinado</div><div style="font-family:'Syne',sans-serif;font-weight:800;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">$25.000</div></div>
+          <div class="scene-glass" style="padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;border-color:rgba(212,168,83,.3);"><div style="font-size:1.6rem;">🪒</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;">Barba Completa</div><div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:rgba(255,255,255,.45);">Perfilado + hot towel</div><div style="font-family:'Syne',sans-serif;font-weight:800;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">$30.000</div></div>
+          <div class="scene-glass" style="padding:1.4rem;display:flex;flex-direction:column;gap:.5rem;"><div style="font-size:1.6rem;">✨</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;">Full Combo</div><div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:rgba(255,255,255,.45);">Corte + barba + tratamiento</div><div style="font-family:'Syne',sans-serif;font-weight:800;background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">$50.000</div></div>
         </div>
-        <!-- Gallery placeholder -->
         <h2 style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;color:#fff;text-align:center;margin-bottom:1.2rem;">Galería de <span style="background:linear-gradient(135deg,#c9923a,#f5d176);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">trabajos</span></h2>
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:.75rem;margin-bottom:2.5rem;">
-          <div class="scene-img-ph" style="aspect-ratio:1;font-size:1.8rem;">✂️</div>
-          <div class="scene-img-ph" style="aspect-ratio:1;font-size:1.8rem;">💈</div>
-          <div class="scene-img-ph" style="aspect-ratio:1;font-size:1.8rem;">🪒</div>
+          <div class="scene-img-ph" style="aspect-ratio:1;font-size:1.8rem;">✂️</div><div class="scene-img-ph" style="aspect-ratio:1;font-size:1.8rem;">💈</div><div class="scene-img-ph" style="aspect-ratio:1;font-size:1.8rem;">🪒</div>
         </div>
-        <!-- CTA -->
-        <div class="scene-glass" style="padding:2rem;text-align:center;border-color:rgba(212,168,83,.2);">
-          <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#fff;margin-bottom:.5rem;">¿Listo para el cambio?</div>
-          <p style="font-family:'DM Sans',sans-serif;color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:1.2rem;">Agenda tu cita ahora mismo.</p>
-          <button class="demo-btn" style="background:linear-gradient(135deg,#c9923a,#f5d176);color:#0a0e1a;padding:.85rem 2.2rem;border-radius:999px;font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;border:none;">Reservar ahora ✂️</button>
-        </div>
-        <!-- BaraPag credit -->
-        <div style="text-align:center;margin-top:2rem;font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.2);">Ejemplo de sitio creado por <span style="color:rgba(0,212,255,.5);">BaraPag</span> · Páginas Web Super Baratas 🇨🇴</div>
+        <div class="scene-glass" style="padding:2rem;text-align:center;border-color:rgba(212,168,83,.2);"><div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#fff;margin-bottom:.5rem;">¿Listo para el cambio?</div><p style="font-family:'DM Sans',sans-serif;color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:1.2rem;">Agenda tu cita ahora mismo.</p><button class="demo-btn" style="background:linear-gradient(135deg,#c9923a,#f5d176);color:#0a0e1a;padding:.85rem 2.2rem;border-radius:999px;font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;border:none;">Reservar ahora ✂️</button></div>
+        <div style="text-align:center;margin-top:2rem;font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.2);">Ejemplo de sitio creado por <span style="color:rgba(0,212,255,.5);">BaraPag</span> · Páginas Web Super Baratas <span class="co-flag"></span></div>
       </div>
     </div>
   </div>
@@ -772,18 +741,13 @@
   <div id="scene-restaurante" class="portfolio-scene">
     <div class="mesh-bg" style="background: radial-gradient(ellipse 60% 50% at 20% 20%, rgba(255,107,53,0.15) 0%, transparent 70%), radial-gradient(ellipse 50% 60% at 80% 80%, rgba(247,197,159,0.1) 0%, transparent 70%), #0a0e1a;"></div>
     <button class="scene-back-btn" onclick="closeScene()">← Volver al portafolio</button>
-
     <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:5rem 1.25rem 3rem;position:relative;z-index:10;">
       <div style="max-width:900px;width:100%;margin:auto;">
-        <!-- Nav mockup -->
         <div class="scene-glass" style="display:flex;align-items:center;justify-content:space-between;padding:.85rem 1.5rem;margin-bottom:3rem;">
           <span style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.1rem;color:#fff;">La <span style="background:linear-gradient(135deg,#ff6b35,#f7931e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Parrilla</span></span>
-          <div style="display:flex;gap:1.5rem;font-size:.8rem;color:rgba(255,255,255,.5);font-family:'DM Sans',sans-serif;">
-            <span>Menú</span><span>Nosotros</span><span>Reservas</span>
-          </div>
+          <div style="display:flex;gap:1.5rem;font-size:.8rem;color:rgba(255,255,255,.5);font-family:'DM Sans',sans-serif;"><span>Menú</span><span>Nosotros</span><span>Reservas</span></div>
           <button class="demo-btn" style="background:linear-gradient(135deg,#ff6b35,#f7931e);color:#fff;padding:.45rem 1.1rem;border-radius:999px;font-family:'Syne',sans-serif;font-weight:700;font-size:.78rem;border:none;">Pedir 🍔</button>
         </div>
-        <!-- Hero -->
         <div style="text-align:center;margin-bottom:3rem;">
           <div style="display:inline-flex;align-items:center;gap:.5rem;background:rgba(255,107,53,.12);border:1px solid rgba(255,107,53,.3);border-radius:999px;padding:.4rem 1rem;font-family:'DM Sans',sans-serif;font-size:.72rem;color:#ff6b35;letter-spacing:.08em;margin-bottom:1.5rem;">🔥 &nbsp;Abierto · L–V 11am – 10pm</div>
           <h1 style="font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(2.2rem,5.5vw,4.2rem);line-height:1.1;color:#fff;margin-bottom:1rem;">Sabor que<br/><span style="background:linear-gradient(135deg,#ff6b35,#f7931e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">enamora</span></h1>
@@ -793,9 +757,7 @@
             <button class="demo-btn" style="border:1px solid rgba(255,107,53,.4);color:#ff6b35;background:transparent;padding:.85rem 2rem;border-radius:999px;font-family:'Syne',sans-serif;font-weight:600;font-size:.9rem;">Hacer pedido</button>
           </div>
         </div>
-        <!-- Menu sections -->
         <h2 style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;color:#fff;text-align:center;margin-bottom:1.2rem;">Nuestro <span style="background:linear-gradient(135deg,#ff6b35,#f7931e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Menú</span></h2>
-        <!-- Category tabs -->
         <div style="display:flex;gap:.6rem;justify-content:center;flex-wrap:wrap;margin-bottom:1.5rem;">
           <div style="background:linear-gradient(135deg,#ff6b35,#f7931e);color:#fff;padding:.4rem 1rem;border-radius:999px;font-family:'DM Sans',sans-serif;font-size:.78rem;font-weight:600;">🍔 Burgers</div>
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);padding:.4rem 1rem;border-radius:999px;font-family:'DM Sans',sans-serif;font-size:.78rem;">🐟 Ceviches</div>
@@ -803,32 +765,10 @@
           <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.5);padding:.4rem 1rem;border-radius:999px;font-family:'DM Sans',sans-serif;font-size:.78rem;">🍰 Postres</div>
         </div>
         <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem;margin-bottom:2.5rem;">
-          <div class="scene-glass" style="padding:1.2rem;display:flex;gap:1rem;align-items:center;">
-            <div class="scene-img-ph" style="width:60px;height:60px;flex-shrink:0;font-size:1.5rem;">🍔</div>
-            <div>
-              <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.9rem;">Burger Clásica</div>
-              <div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);">Carne, queso, lechuga</div>
-              <div style="font-family:'Syne',sans-serif;font-weight:700;background:linear-gradient(135deg,#ff6b35,#f7931e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:.9rem;margin-top:.3rem;">$18.000</div>
-            </div>
-          </div>
-          <div class="scene-glass" style="padding:1.2rem;display:flex;gap:1rem;align-items:center;border-color:rgba(255,107,53,.25);">
-            <div class="scene-img-ph" style="width:60px;height:60px;flex-shrink:0;font-size:1.5rem;">🔥</div>
-            <div>
-              <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.9rem;">Burger BBQ</div>
-              <div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);">Tocino, cebolla crispy</div>
-              <div style="font-family:'Syne',sans-serif;font-weight:700;background:linear-gradient(135deg,#ff6b35,#f7931e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:.9rem;margin-top:.3rem;">$22.000</div>
-            </div>
-          </div>
-          <div class="scene-glass" style="padding:1.2rem;display:flex;gap:1rem;align-items:center;">
-            <div class="scene-img-ph" style="width:60px;height:60px;flex-shrink:0;font-size:1.5rem;">⭐</div>
-            <div>
-              <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.9rem;">Smash Double</div>
-              <div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);">Doble carne + salsa especial</div>
-              <div style="font-family:'Syne',sans-serif;font-weight:700;background:linear-gradient(135deg,#ff6b35,#f7931e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:.9rem;margin-top:.3rem;">$28.000</div>
-            </div>
-          </div>
+          <div class="scene-glass" style="padding:1.2rem;display:flex;gap:1rem;align-items:center;"><div class="scene-img-ph" style="width:60px;height:60px;flex-shrink:0;font-size:1.5rem;">🍔</div><div><div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.9rem;">Burger Clásica</div><div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);">Carne, queso, lechuga</div><div style="font-family:'Syne',sans-serif;font-weight:700;background:linear-gradient(135deg,#ff6b35,#f7931e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:.9rem;margin-top:.3rem;">$18.000</div></div></div>
+          <div class="scene-glass" style="padding:1.2rem;display:flex;gap:1rem;align-items:center;border-color:rgba(255,107,53,.25);"><div class="scene-img-ph" style="width:60px;height:60px;flex-shrink:0;font-size:1.5rem;">🔥</div><div><div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.9rem;">Burger BBQ</div><div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);">Tocino, cebolla crispy</div><div style="font-family:'Syne',sans-serif;font-weight:700;background:linear-gradient(135deg,#ff6b35,#f7931e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:.9rem;margin-top:.3rem;">$22.000</div></div></div>
+          <div class="scene-glass" style="padding:1.2rem;display:flex;gap:1rem;align-items:center;"><div class="scene-img-ph" style="width:60px;height:60px;flex-shrink:0;font-size:1.5rem;">⭐</div><div><div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.9rem;">Smash Double</div><div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);">Doble carne + salsa especial</div><div style="font-family:'Syne',sans-serif;font-weight:700;background:linear-gradient(135deg,#ff6b35,#f7931e);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;font-size:.9rem;margin-top:.3rem;">$28.000</div></div></div>
         </div>
-        <!-- Photo gallery -->
         <div style="display:grid;grid-template-columns:2fr 1fr 1fr;gap:.75rem;margin-bottom:2.5rem;">
           <div class="scene-img-ph" style="aspect-ratio:4/3;font-size:2.5rem;grid-row:span 2;">🍔</div>
           <div class="scene-img-ph" style="aspect-ratio:1;font-size:1.8rem;">🔥</div>
@@ -836,14 +776,8 @@
           <div class="scene-img-ph" style="aspect-ratio:1;font-size:1.8rem;">🍟</div>
           <div class="scene-img-ph" style="aspect-ratio:1;font-size:1.8rem;">🍰</div>
         </div>
-        <!-- Pedido CTA -->
-        <div class="scene-glass" style="padding:2rem;text-align:center;border-color:rgba(255,107,53,.2);">
-          <div style="font-size:1.8rem;margin-bottom:.5rem;">🚴</div>
-          <div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#fff;margin-bottom:.5rem;">¿Tienes hambre?</div>
-          <p style="font-family:'DM Sans',sans-serif;color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:1.2rem;">Escríbenos tu pedido y te lo preparamos.</p>
-          <button class="demo-btn" style="background:linear-gradient(135deg,#ff6b35,#f7931e);color:#fff;padding:.85rem 2.2rem;border-radius:999px;font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;border:none;">Hacer pedido 🍔</button>
-        </div>
-        <div style="text-align:center;margin-top:2rem;font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.2);">Ejemplo de sitio creado por <span style="color:rgba(0,212,255,.5);">BaraPag</span> · Páginas Web Super Baratas 🇨🇴</div>
+        <div class="scene-glass" style="padding:2rem;text-align:center;border-color:rgba(255,107,53,.2);"><div style="font-size:1.8rem;margin-bottom:.5rem;">🚴</div><div style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.3rem;color:#fff;margin-bottom:.5rem;">¿Tienes hambre?</div><p style="font-family:'DM Sans',sans-serif;color:rgba(255,255,255,.5);font-size:.85rem;margin-bottom:1.2rem;">Escríbenos tu pedido y te lo preparamos.</p><button class="demo-btn" style="background:linear-gradient(135deg,#ff6b35,#f7931e);color:#fff;padding:.85rem 2.2rem;border-radius:999px;font-family:'Syne',sans-serif;font-weight:700;font-size:.9rem;border:none;">Hacer pedido 🍔</button></div>
+        <div style="text-align:center;margin-top:2rem;font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.2);">Ejemplo de sitio creado por <span style="color:rgba(0,212,255,.5);">BaraPag</span> · Páginas Web Super Baratas <span class="co-flag"></span></div>
       </div>
     </div>
   </div>
@@ -852,79 +786,38 @@
   <div id="scene-eventos" class="portfolio-scene">
     <div class="mesh-bg" style="background: radial-gradient(ellipse 60% 50% at 20% 20%, rgba(168,85,247,0.18) 0%, transparent 70%), radial-gradient(ellipse 50% 60% at 80% 80%, rgba(236,72,153,0.1) 0%, transparent 70%), #0a0e1a;"></div>
     <button class="scene-back-btn" onclick="closeScene()">← Volver al portafolio</button>
-
     <div style="min-height:100vh;display:flex;align-items:center;justify-content:center;padding:5rem 1.25rem 3rem;position:relative;z-index:10;">
       <div style="max-width:700px;width:100%;margin:auto;text-align:center;">
-        <!-- Invitation badge -->
         <div style="display:inline-flex;align-items:center;gap:.5rem;background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.3);border-radius:999px;padding:.4rem 1.1rem;font-family:'DM Sans',sans-serif;font-size:.72rem;color:#c084fc;letter-spacing:.08em;margin-bottom:2rem;">🎉 &nbsp;Invitación digital · BaraPag Demo</div>
-
-        <!-- Event card -->
         <div class="scene-glass" style="padding:2.5rem 2rem;border-color:rgba(168,85,247,.2);margin-bottom:1.5rem;position:relative;overflow:hidden;">
-          <!-- Decorative corner -->
           <div style="position:absolute;top:-40px;right:-40px;width:140px;height:140px;background:radial-gradient(circle,rgba(168,85,247,.2),transparent);border-radius:50%;"></div>
           <div style="position:absolute;bottom:-40px;left:-40px;width:120px;height:120px;background:radial-gradient(circle,rgba(236,72,153,.15),transparent);border-radius:50%;"></div>
-
           <div style="font-size:3rem;margin-bottom:.8rem;">💍</div>
           <div style="font-family:'DM Sans',sans-serif;font-size:.8rem;color:rgba(255,255,255,.4);letter-spacing:.12em;margin-bottom:.5rem;">CELEBRACIÓN ESPECIAL</div>
           <h1 style="font-family:'Syne',sans-serif;font-weight:800;font-size:clamp(1.8rem,5vw,3rem);color:#fff;margin-bottom:.4rem;">Sofía &amp; Mateo</h1>
           <div style="font-family:'DM Sans',sans-serif;font-size:1rem;color:rgba(255,255,255,.5);margin-bottom:2rem;">¡Nos casamos!</div>
           <div style="display:inline-block;width:60px;height:1px;background:linear-gradient(90deg,transparent,rgba(168,85,247,.6),transparent);margin-bottom:2rem;"></div>
-
-          <!-- Date & place -->
           <div style="display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-bottom:2rem;">
-            <div style="background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.18);border-radius:1rem;padding:1.1rem;">
-              <div style="font-size:1.3rem;margin-bottom:.4rem;">📅</div>
-              <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.95rem;">15 · Nov · 2025</div>
-              <div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-top:.2rem;">6:00 PM</div>
-            </div>
-            <div style="background:rgba(236,72,153,.08);border:1px solid rgba(236,72,153,.18);border-radius:1rem;padding:1.1rem;">
-              <div style="font-size:1.3rem;margin-bottom:.4rem;">📍</div>
-              <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.95rem;">Club El Campestre</div>
-              <div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-top:.2rem;">Medellín, Colombia</div>
-            </div>
+            <div style="background:rgba(168,85,247,.08);border:1px solid rgba(168,85,247,.18);border-radius:1rem;padding:1.1rem;"><div style="font-size:1.3rem;margin-bottom:.4rem;">📅</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.95rem;">15 · Nov · 2025</div><div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-top:.2rem;">6:00 PM</div></div>
+            <div style="background:rgba(236,72,153,.08);border:1px solid rgba(236,72,153,.18);border-radius:1rem;padding:1.1rem;"><div style="font-size:1.3rem;margin-bottom:.4rem;">📍</div><div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;font-size:.95rem;">Club El Campestre</div><div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.4);margin-top:.2rem;">Medellín, Colombia</div></div>
           </div>
-
-          <!-- Countdown -->
           <div style="margin-bottom:2rem;">
             <div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.35);letter-spacing:.1em;margin-bottom:.8rem;">CUENTA REGRESIVA</div>
             <div id="countdown-display" style="display:flex;gap:.7rem;justify-content:center;">
-              <div style="background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.25);border-radius:.75rem;padding:.8rem 1rem;min-width:64px;">
-                <div id="cd-d" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;background:linear-gradient(135deg,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">--</div>
-                <div style="font-family:'DM Sans',sans-serif;font-size:.62rem;color:rgba(255,255,255,.35);">días</div>
-              </div>
-              <div style="background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.25);border-radius:.75rem;padding:.8rem 1rem;min-width:64px;">
-                <div id="cd-h" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;background:linear-gradient(135deg,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">--</div>
-                <div style="font-family:'DM Sans',sans-serif;font-size:.62rem;color:rgba(255,255,255,.35);">horas</div>
-              </div>
-              <div style="background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.25);border-radius:.75rem;padding:.8rem 1rem;min-width:64px;">
-                <div id="cd-m" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;background:linear-gradient(135deg,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">--</div>
-                <div style="font-family:'DM Sans',sans-serif;font-size:.62rem;color:rgba(255,255,255,.35);">minutos</div>
-              </div>
-              <div style="background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.25);border-radius:.75rem;padding:.8rem 1rem;min-width:64px;">
-                <div id="cd-s" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;background:linear-gradient(135deg,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">--</div>
-                <div style="font-family:'DM Sans',sans-serif;font-size:.62rem;color:rgba(255,255,255,.35);">segundos</div>
-              </div>
+              <div style="background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.25);border-radius:.75rem;padding:.8rem 1rem;min-width:64px;"><div id="cd-d" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;background:linear-gradient(135deg,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">--</div><div style="font-family:'DM Sans',sans-serif;font-size:.62rem;color:rgba(255,255,255,.35);">días</div></div>
+              <div style="background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.25);border-radius:.75rem;padding:.8rem 1rem;min-width:64px;"><div id="cd-h" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;background:linear-gradient(135deg,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">--</div><div style="font-family:'DM Sans',sans-serif;font-size:.62rem;color:rgba(255,255,255,.35);">horas</div></div>
+              <div style="background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.25);border-radius:.75rem;padding:.8rem 1rem;min-width:64px;"><div id="cd-m" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;background:linear-gradient(135deg,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">--</div><div style="font-family:'DM Sans',sans-serif;font-size:.62rem;color:rgba(255,255,255,.35);">minutos</div></div>
+              <div style="background:rgba(168,85,247,.12);border:1px solid rgba(168,85,247,.25);border-radius:.75rem;padding:.8rem 1rem;min-width:64px;"><div id="cd-s" style="font-family:'Syne',sans-serif;font-weight:800;font-size:1.5rem;background:linear-gradient(135deg,#a855f7,#ec4899);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">--</div><div style="font-family:'DM Sans',sans-serif;font-size:.62rem;color:rgba(255,255,255,.35);">segundos</div></div>
             </div>
           </div>
-
-          <!-- RSVP -->
           <div style="background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.07);border-radius:1rem;padding:1.5rem;margin-bottom:1.5rem;">
             <div style="font-family:'Syne',sans-serif;font-weight:700;color:#fff;margin-bottom:1rem;font-size:.95rem;">¿Asistirás? Confirma aquí</div>
-            <div style="display:flex;flex-direction:column;gap:.7rem;margin-bottom:1rem;">
-              <input class="demo-btn" placeholder="Tu nombre completo" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:.65rem;padding:.75rem 1rem;color:rgba(255,255,255,.4);font-family:'DM Sans',sans-serif;font-size:.85rem;width:100%;text-align:left;" readonly/>
-              <input class="demo-btn" placeholder="Número de asistentes" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:.65rem;padding:.75rem 1rem;color:rgba(255,255,255,.4);font-family:'DM Sans',sans-serif;font-size:.85rem;width:100%;text-align:left;" readonly/>
-            </div>
-            <div style="display:flex;gap:.7rem;">
-              <button class="demo-btn" style="flex:1;background:linear-gradient(135deg,#a855f7,#ec4899);color:#fff;padding:.8rem;border-radius:.65rem;font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;border:none;">✅ Sí asistiré</button>
-              <button class="demo-btn" style="flex:1;border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.4);background:transparent;padding:.8rem;border-radius:.65rem;font-family:'Syne',sans-serif;font-weight:600;font-size:.85rem;">❌ No podré ir</button>
-            </div>
+            <div style="display:flex;flex-direction:column;gap:.7rem;margin-bottom:1rem;"><input class="demo-btn" placeholder="Tu nombre completo" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:.65rem;padding:.75rem 1rem;color:rgba(255,255,255,.4);font-family:'DM Sans',sans-serif;font-size:.85rem;width:100%;text-align:left;" readonly/><input class="demo-btn" placeholder="Número de asistentes" style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:.65rem;padding:.75rem 1rem;color:rgba(255,255,255,.4);font-family:'DM Sans',sans-serif;font-size:.85rem;width:100%;text-align:left;" readonly/></div>
+            <div style="display:flex;gap:.7rem;"><button class="demo-btn" style="flex:1;background:linear-gradient(135deg,#a855f7,#ec4899);color:#fff;padding:.8rem;border-radius:.65rem;font-family:'Syne',sans-serif;font-weight:700;font-size:.85rem;border:none;">✅ Sí asistiré</button><button class="demo-btn" style="flex:1;border:1px solid rgba(255,255,255,.1);color:rgba(255,255,255,.4);background:transparent;padding:.8rem;border-radius:.65rem;font-family:'Syne',sans-serif;font-weight:600;font-size:.85rem;">❌ No podré ir</button></div>
           </div>
-
-          <!-- Map placeholder -->
           <div class="scene-img-ph" style="height:120px;border-radius:.85rem;font-size:1.5rem;">📍 Ver mapa</div>
         </div>
-
-        <div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.2);">Ejemplo de invitación creada por <span style="color:rgba(0,212,255,.5);">BaraPag</span> · Páginas Web Super Baratas 🇨🇴</div>
+        <div style="font-family:'DM Sans',sans-serif;font-size:.75rem;color:rgba(255,255,255,.2);">Ejemplo de invitación creada por <span style="color:rgba(0,212,255,.5);">BaraPag</span> · Páginas Web Super Baratas <span class="co-flag"></span></div>
       </div>
     </div>
   </div>
@@ -933,21 +826,14 @@
   <footer class="relative z-10 py-10 px-5">
     <div class="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
       <div class="flex items-center gap-3">
-        <img src="LogoOficial.png"
-             alt="BaraPag" class="logo-img h-8 w-8 object-contain rounded-lg bg-white/5 p-0.5" />
+        <img src="LogoOficial.png" alt="BaraPag" class="logo-img h-8 w-8 object-contain rounded-lg bg-white/5 p-0.5" />
         <span class="font-display font-700 text-white">Bara<span class="grad-text">Pag</span></span>
       </div>
-      <p class="text-slate-500 text-xs font-body text-center">
-        © 2026 BaraPag · Páginas Web Super Baratas · Medellín, Colombia 🇨🇴
-      </p>
-      <a href="mailto:barapagoficial@gmail.com" class="text-slate-500 hover:text-cyan text-xs font-body transition-colors">
-        barapagoficial@gmail.com
-      </a>
+      <p class="text-slate-500 text-xs font-body text-center">© 2026 BaraPag · Páginas Web Super Baratas · Medellín, Colombia <span class="co-flag"></span></p>
+      <a href="mailto:barapagoficial@gmail.com" class="text-slate-500 hover:text-cyan text-xs font-body transition-colors email-link" data-email="barapagoficial@gmail.com">barapagoficial@gmail.com</a>
     </div>
   </footer>
 
-
-  <!-- ===== JS ===== -->
   <script>
     // Hamburger toggle
     const btn = document.getElementById('hamburger-btn');
@@ -967,11 +853,33 @@
     }, { threshold: 0.12 });
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
+    // ── EMAIL LINKS FALLBACK ──
+    // Si mailto no funciona, copia al portapapeles y muestra alerta
+    document.querySelectorAll('.email-link').forEach(link => {
+      link.addEventListener('click', function(e) {
+        const href = this.getAttribute('href');
+        if (href && href.startsWith('mailto:')) {
+          // Intentamos abrir mailto normalmente, pero si falla (por timeout) copiamos
+          let timeout = setTimeout(() => {
+            // fallback: copiar email
+            const emailPart = href.substring(7); // quita "mailto:"
+            navigator.clipboard.writeText(emailPart.split('?')[0]).then(() => {
+              alert('📋 No se pudo abrir el correo automáticamente.\n\nLa dirección "' + emailPart.split('?')[0] + '" ha sido copiada al portapapeles. Pégalo en tu cliente de correo.');
+            }).catch(() => {
+              alert('⚠️ No se pudo abrir el correo. Por favor, escribe a barapagoficial@gmail.com manualmente.');
+            });
+          }, 500);
+          // Si el mailto se abre correctamente, el navegador puede perder foco, pero no tenemos forma de saberlo.
+          // Usamos un evento de blur en la ventana como indicador (no perfecto)
+          window.addEventListener('blur', () => clearTimeout(timeout));
+        }
+      });
+    });
+
     // ── PORTFOLIO SCENES ──
     let cdInterval = null;
 
     function startCountdown() {
-      // Fecha objetivo: 15 de noviembre de 2025, 18:00:00 (6:00 PM)
       const targetDate = new Date(2025, 10, 15, 18, 0, 0).getTime();
 
       function updateCountdown() {
@@ -979,7 +887,6 @@
         const distance = targetDate - now;
 
         if (distance < 0) {
-          // Si ya pasó la fecha, mostrar 0
           const dEl = document.getElementById('cd-d');
           const hEl = document.getElementById('cd-h');
           const mEl = document.getElementById('cd-m');
